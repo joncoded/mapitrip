@@ -12,7 +12,7 @@ var chapters = {
       ],
       readmore: {
           label: 'Read more',
-          link: '#'
+          link: 'https://twitter.com/joncoded'
       }
   },
   'aldgate': {      
