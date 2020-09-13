@@ -8,7 +8,7 @@ var config = {
     "pitch": 45
   },
   "site" : {
-    "title" : 'Mapstory',
+    "title" : 'Mapstory Template',
     "intro" : 'A map which you can customize and have users scroll down to see a description and location on the map:'
   }
 }

@@ -38,26 +38,31 @@ body {
             }
 
                 p.intro {
-                    padding: 30px 30px 0 30px;
+                    padding: 30px;
                 }
 
             section {
                 padding: 30px;            
-                border-bottom: 1px solid #ddd;
+                border-bottom: 1px solid #bbb;
                 opacity: 0.25;
                 font-size: 14px;
                 line-height: 28px;
             }
 
+                section:first-of-type {
+                    border-top: 1px solid #bbb;
+                }
+
                 section.active {
                     opacity: 1;
                 }
                 
-                section:last-child {
+                section:last-of-type {
                     border-bottom: none;
                     height: calc(100vh - 140px);
                 }   
                 
-                section img {                    
+                section img {  
+                    min-width: 100%;                  
                     max-width: 100%;                                    
                 }
