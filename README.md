@@ -12,6 +12,10 @@ based on https://docs.mapbox.com/mapbox-gl-js/example/scroll-fly-to/
   - using FTP (or some other means)
   - loads right out of the box
 
+## demo
+
+https://mapstory.netlify.app/
+
 ## changelog
 
 2020-09-13 base + readme
