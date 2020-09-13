@@ -1,0 +1,63 @@
+
+body { 
+    font-family: sans-serif; 
+    margin: 0; 
+    padding: 0; 
+}
+
+    #map { 
+        top: 0; 
+        bottom: 0;  
+        position: fixed;
+        width: 50%;
+    }
+
+        #features {
+            width: 50%;
+            margin-left: 50%;        
+            overflow-y: scroll;
+            background-color: #fafafa;    
+        }
+
+            header {
+                background: #06c;
+                color: #fff;
+                padding: 30px;
+                position: fixed;      
+                width: 100%;  
+                z-index: 2;    
+            }
+
+                h1 { 
+                    margin: 0; 
+                    font-size: 2rem; 
+                }
+
+            main {
+                padding-top: 90px;
+            }
+
+                p.intro {
+                    padding: 30px 30px 0 30px;
+                }
+
+            section {
+                padding: 30px;            
+                border-bottom: 1px solid #ddd;
+                opacity: 0.25;
+                font-size: 14px;
+                line-height: 28px;
+            }
+
+                section.active {
+                    opacity: 1;
+                }
+                
+                section:last-child {
+                    border-bottom: none;
+                    height: calc(100vh - 140px);
+                }   
+                
+                section img {                    
+                    max-width: 100%;                                    
+                }
