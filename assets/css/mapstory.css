@@ -12,57 +12,78 @@ body {
         width: 50%;
     }
 
-        #features {
-            width: 50%;
-            margin-left: 50%;        
-            overflow-y: scroll;
-            background-color: #fafafa;    
+    #features {
+        width: 50%;
+        margin-left: 50%;        
+        overflow-y: scroll;
+        background-color: #fafafa;    
+    }
+
+        header {
+            background: #06c;
+            color: #fff;
+            padding: 30px;
+            position: fixed;      
+            width: 100%;  
+            z-index: 2;    
         }
 
-            header {
-                background: #06c;
-                color: #fff;
+            h1 { 
+                margin: 0; 
+                font-size: 2rem; 
+            }
+
+        main {
+            padding-top: 90px;
+        }
+
+            p.intro {
                 padding: 30px;
-                position: fixed;      
-                width: 100%;  
-                z-index: 2;    
             }
 
-                h1 { 
-                    margin: 0; 
-                    font-size: 2rem; 
-                }
+        section {
+            padding: 30px;            
+            border-bottom: 1px solid #bbb;
+            opacity: 0.25;
+            font-size: 14px;
+            line-height: 28px;
+        }
 
-            main {
-                padding-top: 90px;
+            section:first-of-type {
+                border-top: 1px solid #bbb;
             }
 
-                p.intro {
-                    padding: 30px;
-                }
-
-            section {
-                padding: 30px;            
-                border-bottom: 1px solid #bbb;
-                opacity: 0.25;
-                font-size: 14px;
-                line-height: 28px;
+            section.active {
+                opacity: 1;
+            }
+            
+            section:last-of-type {
+                border-bottom: none;
+                height: calc(100vh - 140px);
+            }   
+            
+            section img {  
+                min-width: 100%;                  
+                max-width: 100%;                                    
             }
 
-                section:first-of-type {
-                    border-top: 1px solid #bbb;
-                }
+/*
+@media screen and (max-width: 640px) {
 
-                section.active {
-                    opacity: 1;
-                }
-                
-                section:last-of-type {
-                    border-bottom: none;
-                    height: calc(100vh - 140px);
-                }   
-                
-                section img {  
-                    min-width: 100%;                  
-                    max-width: 100%;                                    
-                }
+    #map {
+        top: 0;
+        height: 50% !important;
+        width: 100% !important;
+        z-index: 1 !important;
+    }
+
+    #features {
+        position: fixed;  
+        top: 50% !important;
+        bottom: 0 !important;
+        margin-left: 0 !important;
+        margin-top: 0 !important;
+        width: 100% !important;
+    }
+
+} */

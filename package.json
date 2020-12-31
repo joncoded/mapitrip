@@ -1,0 +1,25 @@
+{
+  "name": "mapstory",
+  "version": "1.0.0",
+  "description": "compiling a more configurable version of a mapbox template",
+  "main": "index.js",
+  "dependencies": {
+    "bl": "^4.0.3",
+    "netlify-cli": "^2.65.5",
+    "semver": "^7.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joncoded/mapstory.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joncoded/mapstory/issues"
+  },
+  "homepage": "https://github.com/joncoded/mapstory#readme"
+}

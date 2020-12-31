@@ -23,8 +23,6 @@ $(document).ready(function() {
 
     $.each(chapters, function(index, o) {
 
-        var heading = o['heading'];
-
         var paragraphs = '';        
         $.each(o['paragraphs'], function(index, p) {
             paragraphs += '<p>' + p + '</p>';
@@ -32,12 +30,17 @@ $(document).ready(function() {
 
         var readmore = '';
         if (o['readmore'] !== undefined) {
-            readmore =  '<p>&rarr; <a href="' + o['readmore']['link'] + '">' + o['readmore']['label'] + '</a></p>';
+            readmore =  '<p>&rarr; <a href="' + o['readmore'] + '" target="_blank"> read more </a></p>';
         }
 
         var html = template
             .replace(/{{id}}/ig, index)
-            .replace(/{{heading}}/ig, heading)
+            .replace(/{{idn}}/ig, index.replace('stop-',' '))
+            .replace(/{{city}}/ig, o['city'])
+            .replace(/{{heading}}/ig, o['heading'])
+            .replace(/{{date}}/ig, o['date'])
+            .replace(/{{googlecenter}}/ig, o['googlecenter'][0] + ', ' + o['googlecenter'][1])
+            .replace(/{{localheading}}/ig, o['localheading'])
             .replace(/{{paragraphs}}/ig, paragraphs)
             .replace(/{{readmore}}/ig, readmore);
         

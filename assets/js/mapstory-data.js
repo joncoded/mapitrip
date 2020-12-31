@@ -40,7 +40,7 @@ var chapters = {
         heading: 'Image + YouTube video',
         paragraphs: [                    
           '<img src="https://placeimg.com/800/350/london-bridge">',
-          '<iframe width="100%" height="300" src="https://www.youtube.com/embed/SF5mf4LV7Jw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+          '<iframe width="100%" height="300" src="https://www.youtube.com/embed/SF5mf4LV7Jw" frameborder="0" allonw="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
         ],
         readmore: {
             label: 'Read more',

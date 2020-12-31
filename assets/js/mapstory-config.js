@@ -2,13 +2,14 @@ var config = {
   /* initial state of map */
   "basemap" : {
     "style" : 'mapbox://styles/mapbox/streets-v11',
-    "center" : [-0.15591514, 51.51830379],
-    "zoom" : 15.5,
-    "bearing": 27,
-    "pitch": 45
+    "center" : [139.77977,
+      35.54952],
+    "zoom" : 15,
+    "bearing": 0,
+    "pitch": 0
   },
   "site" : {
-    "title" : 'Mapstory Template',
-    "intro" : 'A map which you can customize and have users scroll down to see a description and location on the map:'
+    "title" : '🇯🇵 2019',
+    "intro" : '<p>a trip to: tokyo + kyoto + hiroshima + osaka + odawara</p> <p><small>this is still a work in progress (photos to come)</small></p>'
   }
 }
